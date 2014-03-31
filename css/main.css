@@ -1,0 +1,78 @@
+#header{
+	border-top: 3px solid #019875;
+}
+.mainnav{
+	background-color:#f8f8f8;
+}
+.mainnav ul a:hover{
+	border-right: 1px solid #019875;
+}
+
+ul.reset{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.hot_job li{
+	padding: 15px 0;
+	line-height: 25px;
+	display: inline-block;
+}
+.hot_job li:nth-child(even){
+	background-color: #fafafa;
+}
+.hot_job a{
+	font-size: 16px;
+}
+.hot_job span{
+	margin-right: 10px;
+}
+.c9{
+	color: #999;
+}
+em{
+	font-style: normal;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mb10{
+	margin-bottom: 10px;	
+}
+.companyTags li{
+	font-size:12px;
+	float:left; 
+	padding:0 5px; 
+	background:#fff; 
+	border:1px solid #a9a9a9;
+	color:#a9a9a9;
+	margin:5px 15px 0 0; 
+	line-height:18px;
+}
+#footer{
+	font-size: 12px;
+	border-bottom: 3px solid #019875;
+}
+#footer .p4{
+	margin: 10px auto;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #999;
+}
+a:hover{
+	color: #0d9572 !important;
+}
+a{
+	color: #555 !important;
+}
+body{
+	font-family:"Microsoft YaHei",Helvetica, Arial, sans-serif;
+}
+::selection {
+	background: #019875;
+	color:white;
+}
+::-moz-selection{
+	background: #019875;
+	color:white;
+}

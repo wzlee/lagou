@@ -1,0 +1,565 @@
+<!doctype html>
+<html ng-app>
+<head>
+<meta charset="utf-8">
+<title>lagou-最专业的招聘网站</title>
+<link rel="stylesheet" type="text/css" href="bootstrap-3.0.3/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript" src="jquery/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="bootstrap-3.0.3/js/bootstrap.js"></script>
+<script type="text/javascript" src="angular-1.2.6/angular.js"></script>
+</head>
+<body>
+	<!-- header start-->
+	<header class="navbar navbar-default" id="header">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headerNav">
+					<span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">拉钩网</a>
+			</div>
+			<div class="collapse navbar-collapse" id="headerNav">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="">首页</a>
+					</li>
+					<li>
+						<a href="">公司</a>
+					</li>
+					<li>
+						<a href="">论坛</a>
+					</li>
+					<li>
+						<a href="">我的简历</a>
+					</li>
+					<li>
+						<a href="">发布职位</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#" data-toggle="modal" data-target="#loginModal">登录</a>
+					</li>
+					<li>
+						<a href="">注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+	<!-- container start-->
+	<div class="container" id="main">
+		<div class="row">
+			<div class="col-md-3" id="sidebar">
+				<div class="mainnav">
+					<ul class="nav">
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+						<li><a href="#">运营</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9" id="content">
+				<div id="searchbox">
+					<form class="form-inline">
+						<div class="input-group input-group-lg">
+							<input type="text" class="form-control" id="keywords" placeholder="请输入职位名称或公司名称">
+							<span class="input-group-btn">
+						    	<button class="btn btn-default" type="button">找工作</button>
+						    </span>
+						</div>
+					</form>
+				</div>
+				<div id="hotsearch">
+					<h4>热门标签 :
+					<a href="" class="btn btn-link">java</a>
+					<a href="" class="btn btn-link">PHP</a>
+					<a href="" class="btn btn-link">java</a>
+					<a href="" class="btn btn-link">PHP</a>
+					<a href="" class="btn btn-link">java</a>
+					<a href="" class="btn btn-link">PHP</a>
+					</h4>
+				</div>
+				<div id="hottab">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#hotjob" data-toggle="tab">热门职位</a></li>
+						<li><a href="#lastjob" data-toggle="tab">最新职位</a></li>
+					</ul>
+				
+					<div id="hottabContent" class="tab-content">
+				        <div class="tab-pane fade active in" id="hotjob">
+				        	<ul class="hot_job reset">
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        	</ul>
+				        </div>
+				        <div class="tab-pane fade" id="lastjob">
+				        	<ul class="hot_job reset">
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        		<li>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">商户运营</a>&nbsp;<span class="c9">[杭州]</span>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">月薪: </em>5k-10k</span>
+				        					<span><em class="c9">经验: </em>不限</span>
+				        					<span><em class="c9">最低学历: </em>不限</span>
+				        					<br>
+				        					<span><em class="c9">职位诱惑: </em>了解微信的一定知道口袋通，诱惑就不用细说</span>
+				        					<br>
+				        					<span>三天前发布</span>
+				        				</div>
+				        			</div>
+				        			<div class="col-md-6">
+				        				<div class="mb10">
+				        					<a href="#">口袋通</a>
+				        				</div>
+				        				<div>
+				        					<span><em class="c9">领域: </em> 移动互联网,电子商务</span>
+				        					<span><em class="c9">创始人: </em>白鸦</span>
+				        					<br>
+				        					<span><em class="c9">阶段: </em>初创型(天使轮)</span>
+				        					<span><em class="c9">规模: </em>100-500人</span>
+				        					<ul class="companyTags reset">
+				        						<li>弹性工作</li>
+				        						<li>绩效奖金</li>
+				        					</ul>
+				        				</div>
+				        			</div>
+				        		</li>
+				        	</ul>
+				        </div>
+				    </div>
+			     </div>
+			</div>
+		</div>
+	</div>
+	<!--container end-->
+
+	<!-- footer start-->
+	<footer class="navbar-default" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<p class="p4">友情连接</p>
+					<a href="" class="btn btn-link">拉勾网</a>
+					<a href="" class="btn btn-link">智联</a>
+					<a href="" class="btn btn-link">58同城</a>
+					<a href="" class="btn btn-link">lagou</a>
+					<a href="" class="btn btn-link">lagou</a>
+					<a href="" class="btn btn-link">lagou</a>
+					<a href="" class="btn btn-link">lagou</a>
+					<a href="" class="btn btn-link">lagou</a>
+				</div>
+				<div class="col-md-4">
+					<p class="p4">联系我们</p>
+					<a href="" class="btn btn-link">新浪微博</a>
+					<a href="" class="btn btn-link">腾讯微博</a>
+					<a href="" class="btn btn-link">微信</a>
+				</div>
+				<div class="col-md-4">
+					<p class="p4">关于拉钩</p>
+					<p>专注互联招聘.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--footer end-->
+
+	<!-- Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">登录拉钩</h4>
+	      </div>
+	      <div class="modal-body row">
+	      	<div class="col-md-7">
+	        <form class="form-horizontal" role="form">
+			  <div class="form-group">
+			      <input type="email" class="form-control" id="inputEmail3" placeholder="请输入用户名或邮箱">
+			  </div>
+			  <div class="form-group">
+			      <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+			  </div>
+			  <div class="form-group">
+			      <a type="submit" class="btn btn-link">登 录</a>
+			      <a type="button" class="btn btn-link" data-dismiss="modal">关 闭</a>
+			  </div>
+			</form>
+			</div>
+			<div class="col-md-5"></div>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</body>
+</html>
