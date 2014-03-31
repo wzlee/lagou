@@ -1,0 +1,297 @@
+<!doctype html>
+<html ng-app>
+<head>
+<meta charset="utf-8">
+<title>lagou-最专业的招聘网站</title>
+<link rel="stylesheet" type="text/css" href="bootstrap-3.0.3/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript" src="jquery/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="bootstrap-3.0.3/js/bootstrap.js"></script>
+<script type="text/javascript" src="angular-1.2.6/angular.js"></script>
+</head>
+<body>
+	<!-- header start-->
+	<header class="navbar navbar-default" id="header">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headerNav">
+					<span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">拉钩网</a>
+			</div>
+			<div class="collapse navbar-collapse" id="headerNav">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="./index.html">首页</a>
+					</li>
+					<li class="active">
+						<a href="">公司</a>
+					</li>
+					<li>
+						<a href="">论坛</a>
+					</li>
+					<li>
+						<a href="">我的简历</a>
+					</li>
+					<li>
+						<a href="">发布职位</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#" data-toggle="modal" data-target="#loginModal">登录</a>
+					</li>
+					<li>
+						<a href="">注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+	<!-- container start-->
+	<div class="container" id="main">
+		<div class="row">
+			<div class="col-md-9" id="content">
+				<div class="company-tag mb20">
+					<div class="row">
+						<h2 class="fl">热门公司</h2>
+						<ul class="workspace reset">
+							<li class="active"><a href="javascript:void(0)">全国</a></li>
+							<li><a href="javascript:void(0)">北京</a></li>
+							<li><a href="javascript:void(0)">上海</a></li>
+							<li><a href="javascript:void(0)">广州</a></li>
+							<li><a href="javascript:void(0)">深圳</a></li>
+							<li><a href="javascript:void(0)">成都</a></li>
+							<li><a href="javascript:void(0)">青岛</a></li>
+							<li><a href="javascript:void(0)">天津</a></li>
+							<li><a href="javascript:void(0)">其他</a></li>
+						</ul>
+					</div>
+					<div class="row ctype">
+						<div class="row mb10">
+							<strong class="col-md-1">发展阶段:</strong>
+							<span class="col-md-10">
+							<a href="javascript:void(0)">初创型</a> 
+							<a href="javascript:void(0)">成长型</a> 
+							<a href="javascript:void(0)">成熟型</a>
+							<a href="javascript:void(0)">上市型</a>
+							</span>
+						</div>
+
+						<div class="row">
+							<strong class="col-md-1">行业领域:</strong>
+							<span class="col-md-10">
+							<a href="javascript:void(0)">移动互联网</a>
+							<a href="javascript:void(0)">电子商务</a>
+							<a href="javascript:void(0)">社交</a>
+							<a href="javascript:void(0)">企业服务</a>
+							<a href="javascript:void(0)">O2O</a>
+							<a href="javascript:void(0)">教育</a>
+							<a href="javascript:void(0)">文化艺术</a>
+							<a href="javascript:void(0)">游戏</a>
+							<a href="javascript:void(0)">移动互联网</a>
+							<a href="javascript:void(0)">电子商务</a>
+							<a href="javascript:void(0)">社交</a>
+							<a href="javascript:void(0)">企业服务</a>
+							<a href="javascript:void(0)">O2O</a>
+							<a href="javascript:void(0)">教育</a>
+							<a href="javascript:void(0)">文化艺术</a>
+							<a href="javascript:void(0)">游戏</a>
+							<a href="javascript:void(0)">移动互联网</a>
+							<a href="javascript:void(0)">电子商务</a>
+							<a href="javascript:void(0)">社交</a>
+							<a href="javascript:void(0)">企业服务</a>
+							<a href="javascript:void(0)">O2O</a>
+							<a href="javascript:void(0)">教育</a>
+							<a href="javascript:void(0)">文化艺术</a>
+							<a href="javascript:void(0)">游戏</a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="company row">
+					<ul class="companylist reset ">
+						<li class="col-md-4">
+							<a href="#">
+								<h2>校导网</h2>
+								<div>
+									<img data-src="" class="img-thumbnail" alt="140x140" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAADHklEQVR4Xu3XQU7qYABGUR2xMZbNmpgz0mDSiKTQXi2VkvOG8kl99z9p4f14PH68+afAzALvwMwsZfZVABgQUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLePNgDofD1ynu9/vR0xx7ffjZ8Au3fnfsDde+3rMR3TSYy4MfO/Sx168PfArA5YGtfb1nw3L+ezYN5vwfuHXg55/vdru30+n04w70FzD/cb1nQwPMxSNtwHQJ7fpxtzZQYBYucO8zyvkxNXVHGXt97M40/NlLX2/hHA9/u5e+w1zXmwPo3mNn6pH02+s9/JQXvMDLgrl1R5hzx6l3mLEPxsOH8KnrLXiWq7zVpsHM+Xp875vS9dfqqc8wS19vlRNe+CKbBrNwC283owAwMyKZfBcAhoZUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TL+BPn285fsB0YAAAAAAElFTkSuQmCC" style="width: 190px; height: 190px;">
+									<ul>
+										<li>移动互联网</li>
+										<li>武汉,未融资</li>
+									</ul>
+								</div>
+							</a>
+							<a href="#">Android二次开发</a>
+							<a href="#">Java开发</a>
+							<ul class="ctags reset">
+								<li>天使轮</li>
+								<li>移动互联网</li>
+								<li>股票期权</li>
+								<li>绩效奖金</li>
+								<li>五险</li>
+								<li>带薪年假</li>
+							</ul>
+						</li>
+						<li class="col-md-4">
+							<a href="#">
+								<h2>校导网</h2>
+								<div>
+									<img data-src="" class="img-thumbnail" alt="140x140" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAADHklEQVR4Xu3XQU7qYABGUR2xMZbNmpgz0mDSiKTQXi2VkvOG8kl99z9p4f14PH68+afAzALvwMwsZfZVABgQUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLePNgDofD1ynu9/vR0xx7ffjZ8Au3fnfsDde+3rMR3TSYy4MfO/Sx168PfArA5YGtfb1nw3L+ezYN5vwfuHXg55/vdru30+n04w70FzD/cb1nQwPMxSNtwHQJ7fpxtzZQYBYucO8zyvkxNXVHGXt97M40/NlLX2/hHA9/u5e+w1zXmwPo3mNn6pH02+s9/JQXvMDLgrl1R5hzx6l3mLEPxsOH8KnrLXiWq7zVpsHM+Xp875vS9dfqqc8wS19vlRNe+CKbBrNwC283owAwMyKZfBcAhoZUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TL+BPn285fsB0YAAAAAAElFTkSuQmCC" style="width: 190px; height: 190px;">
+									<ul>
+										<li>移动互联网</li>
+										<li>武汉,未融资</li>
+									</ul>
+								</div>
+							</a>
+							<a href="#">Android二次开发</a>
+							<a href="#">Java开发</a>
+							<ul class="ctags reset">
+								<li>天使轮</li>
+								<li>移动互联网</li>
+								<li>股票期权</li>
+								<li>绩效奖金</li>
+								<li>五险</li>
+								<li>带薪年假</li>
+							</ul>
+						</li>
+						<li class="col-md-4">
+							<a href="#">
+								<h2>校导网</h2>
+								<div>
+									<img data-src="" class="img-thumbnail" alt="140x140" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAADHklEQVR4Xu3XQU7qYABGUR2xMZbNmpgz0mDSiKTQXi2VkvOG8kl99z9p4f14PH68+afAzALvwMwsZfZVABgQUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLePNgDofD1ynu9/vR0xx7ffjZ8Au3fnfsDde+3rMR3TSYy4MfO/Sx168PfArA5YGtfb1nw3L+ezYN5vwfuHXg55/vdru30+n04w70FzD/cb1nQwPMxSNtwHQJ7fpxtzZQYBYucO8zyvkxNXVHGXt97M40/NlLX2/hHA9/u5e+w1zXmwPo3mNn6pH02+s9/JQXvMDLgrl1R5hzx6l3mLEPxsOH8KnrLXiWq7zVpsHM+Xp875vS9dfqqc8wS19vlRNe+CKbBrNwC283owAwMyKZfBcAhoZUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TL+BPn285fsB0YAAAAAAElFTkSuQmCC" style="width: 190px; height: 190px;">
+									<ul>
+										<li>移动互联网</li>
+										<li>武汉,未融资</li>
+									</ul>
+								</div>
+							</a>
+							<a href="#">Android二次开发</a>
+							<a href="#">Java开发</a>
+							<ul class="ctags reset">
+								<li>天使轮</li>
+								<li>移动互联网</li>
+								<li>股票期权</li>
+								<li>绩效奖金</li>
+								<li>五险</li>
+								<li>带薪年假</li>
+							</ul>
+						</li>
+						<li class="col-md-4">
+							<a href="#">
+								<h2>校导网</h2>
+								<div>
+									<img data-src="" class="img-thumbnail" alt="140x140" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAADHklEQVR4Xu3XQU7qYABGUR2xMZbNmpgz0mDSiKTQXi2VkvOG8kl99z9p4f14PH68+afAzALvwMwsZfZVABgQUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLePNgDofD1ynu9/vR0xx7ffjZ8Au3fnfsDde+3rMR3TSYy4MfO/Sx168PfArA5YGtfb1nw3L+ezYN5vwfuHXg55/vdru30+n04w70FzD/cb1nQwPMxSNtwHQJ7fpxtzZQYBYucO8zyvkxNXVHGXt97M40/NlLX2/hHA9/u5e+w1zXmwPo3mNn6pH02+s9/JQXvMDLgrl1R5hzx6l3mLEPxsOH8KnrLXiWq7zVpsHM+Xp875vS9dfqqc8wS19vlRNe+CKbBrNwC283owAwMyKZfBcAhoZUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TL+BPn285fsB0YAAAAAAElFTkSuQmCC" style="width: 190px; height: 190px;">
+									<ul>
+										<li>移动互联网</li>
+										<li>武汉,未融资</li>
+									</ul>
+								</div>
+							</a>
+							<a href="#">Android二次开发</a>
+							<a href="#">Java开发</a>
+							<ul class="ctags reset">
+								<li>天使轮</li>
+								<li>移动互联网</li>
+								<li>股票期权</li>
+								<li>绩效奖金</li>
+								<li>五险</li>
+								<li>带薪年假</li>
+							</ul>
+						</li>
+						<li class="col-md-4">
+							<a href="#">
+								<h2>校导网</h2>
+								<div>
+									<img data-src="" class="img-thumbnail" alt="140x140" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAYAAACuwEE+AAADHklEQVR4Xu3XQU7qYABGUR2xMZbNmpgz0mDSiKTQXi2VkvOG8kl99z9p4f14PH68+afAzALvwMwsZfZVABgQUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLGBgGUgFgUi5jYBhIBYBJuYyBYSAVACblMgaGgVQAmJTLePNgDofD1ynu9/vR0xx7ffjZ8Au3fnfsDde+3rMR3TSYy4MfO/Sx168PfArA5YGtfb1nw3L+ezYN5vwfuHXg55/vdru30+n04w70FzD/cb1nQwPMxSNtwHQJ7fpxtzZQYBYucO8zyvkxNXVHGXt97M40/NlLX2/hHA9/u5e+w1zXmwPo3mNn6pH02+s9/JQXvMDLgrl1R5hzx6l3mLEPxsOH8KnrLXiWq7zVpsHM+Xp875vS9dfqqc8wS19vlRNe+CKbBrNwC283owAwMyKZfBcAhoZUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TIGhoFUAJiUyxgYBlIBYFIuY2AYSAWASbmMgWEgFQAm5TL+BPn285fsB0YAAAAAAElFTkSuQmCC" style="width: 190px; height: 190px;">
+									<ul>
+										<li>移动互联网</li>
+										<li>武汉,未融资</li>
+									</ul>
+								</div>
+							</a>
+							<a href="#">Android二次开发</a>
+							<a href="#">Java开发</a>
+							<ul class="ctags reset">
+								<li>天使轮</li>
+								<li>移动互联网</li>
+								<li>股票期权</li>
+								<li>绩效奖金</li>
+								<li>五险</li>
+								<li>带薪年假</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3" id="sidebar">
+			</div>
+		</div>
+	</div>
+	<!--container end-->
+
+	<!-- footer start-->
+	<footer class="navbar-default" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<p class="p4">友情连接</p>
+					<a href="" class="btn btn-link">拉勾网</a>
+					<a href="" class="btn btn-link">智联</a>
+					<a href="" class="btn btn-link">58同城</a>
+					<a href="" class="btn btn-link">lagou</a>
+					<a href="" class="btn btn-link">lagou</a>
+					<a href="" class="btn btn-link">lagou</a>
+					<a href="" class="btn btn-link">lagou</a>
+					<a href="" class="btn btn-link">lagou</a>
+				</div>
+				<div class="col-md-4">
+					<p class="p4">联系我们</p>
+					<a href="" class="btn btn-link">新浪微博</a>
+					<a href="" class="btn btn-link">腾讯微博</a>
+					<a href="" class="btn btn-link">微信</a>
+				</div>
+				<div class="col-md-4">
+					<p class="p4">关于拉钩</p>
+					<p>专注互联招聘.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--footer end-->
+
+	<!-- Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">登录拉钩</h4>
+	      </div>
+	      <div class="modal-body row">
+	      	<div class="col-md-7">
+	        <form class="form-horizontal" role="form">
+			  <div class="form-group">
+			      <input type="email" class="form-control" id="inputEmail3" placeholder="请输入用户名或邮箱">
+			  </div>
+			  <div class="form-group">
+			      <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+			  </div>
+			  <div class="form-group">
+			      <a type="submit" class="btn btn-link">登 录</a>
+			      <a type="button" class="btn btn-link" data-dismiss="modal">关 闭</a>
+			  </div>
+			</form>
+			</div>
+			<div class="col-md-5"></div>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</body>
+</html>
